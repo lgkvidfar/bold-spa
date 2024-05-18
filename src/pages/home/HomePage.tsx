@@ -3,8 +3,16 @@ import PageLayout from "../../layouts/PageLayout";
 const HomePage = () => {
   return (
     <PageLayout>
-      <h1 className="flex-1 text-2xl font-bold">HomePage</h1>
-      <p>Welcome to the HomePage.</p>
+      <div className="flex h-screen flex-col items-center justify-center">
+        <div className="flex flex-col items-center gap-2">
+          <h1 className="text-9xl font-bold">BOLD.</h1>
+          <p className="flex gap-1">
+            <span className="text-borange font-semibold">BOLD</span>
+            by Design, Driven by
+            <span className="text-borange font-semibold">Results.</span>
+          </p>
+        </div>
+      </div>
     </PageLayout>
   );
 };

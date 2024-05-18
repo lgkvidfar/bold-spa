@@ -8,7 +8,7 @@ function PageLayout({
   children: React.ReactNode;
   css?: string;
 }) {
-  return <div className={cn("bg-dark h-screen", css)}>{children}</div>;
+  return <div className={cn("h-screen", css)}>{children}</div>;
 }
 
 export default PageLayout;

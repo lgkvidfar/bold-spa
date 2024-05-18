@@ -4,7 +4,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import HomePage from "./pages/home/HomePage";
-import ServicesPage from "./pages/services/ServicesPage";
+import DiscoverPage from "./pages/discover/DiscoverPage";
 import NotFoundPage from "./pages/not-found/NotFoundPage";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<HomePage />} />
-          <Route path="services" element={<ServicesPage />} />
+          <Route path="discover" element={<DiscoverPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
