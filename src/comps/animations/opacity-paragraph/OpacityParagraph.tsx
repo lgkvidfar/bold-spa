@@ -27,7 +27,7 @@ export default function OpacityParagraph({
   return (
     <p
       className={cn(
-        "relative flex max-w-full flex-wrap whitespace-pre-wrap p-10 text-2xl sm:text-4xl",
+        "z-[0] flex max-w-full flex-wrap whitespace-pre-wrap p-10 text-2xl sm:text-4xl",
         css,
       )}
       ref={element}

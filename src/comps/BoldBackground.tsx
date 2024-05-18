@@ -5,15 +5,15 @@ const staggerContainer = {
   show: {
     opacity: 0.1,
     transition: {
-      duration: 10,
-      staggerChildren: 0.5, // Adjust the stagger duration as needed
+      duration: 2,
+      staggerChildren: 0.1, // Adjust the stagger duration as needed
     },
   },
 };
 
 const staggerItem = {
   hidden: { opacity: 0 },
-  show: { opacity: [0, 0.05, 0.1] },
+  show: { opacity: [0, 0.3] },
 };
 
 const colors = [
