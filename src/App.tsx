@@ -5,7 +5,7 @@ import FixedMenu from "./comps/menu/FixedMenu";
 
 const App: React.FC = () => {
   return (
-    <div className="text-light h-screen">
+    <div className="text-light min-h-screen">
       <FixedMenu />
       <BoldBackground />
       <Outlet />

@@ -9,7 +9,7 @@ function FixedMenu() {
   const linkTo = currentPath === "/" ? "/discover" : "/";
 
   return (
-    <nav className="bg-dark text-bpink fixed right-0 top-0 flex w-fit gap-2 rounded-bl p-4 font-bold sm:text-3xl">
+    <nav className="text-bpink fixed right-0 top-0 flex w-fit gap-2 rounded-bl p-4 font-bold sm:text-3xl">
       <Link to={linkTo} className="link-with-blob relative">
         {linkText}
       </Link>
