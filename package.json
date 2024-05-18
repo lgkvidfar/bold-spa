@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "/bold-spa/#",
+  "homepage": "https://lgkvidfar.github.io/#/bold-spa/",
 
   "scripts": {
     "dev": "vite",
