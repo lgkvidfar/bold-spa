@@ -1,9 +1,9 @@
 {
+  "homepage": "https://lgkvidfar.github.io/bold-spa/",
   "name": "bold-spa",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lgkvidfar.github.io/bold-spa/",
 
   "scripts": {
     "dev": "vite",
