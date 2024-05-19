@@ -24,7 +24,7 @@ function ChangeBgCard({
           trigger: triggerId ? `#${triggerId}` : undefined,
           start: "top 80%",
           end: "center center",
-          markers: true,
+          // markers: true,
           scrub: 1,
         },
       });

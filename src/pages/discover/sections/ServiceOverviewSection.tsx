@@ -3,6 +3,7 @@ import { useLayoutEffect } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import ServiceCard from "./services-comps/ServiceCard";
 import services from "../../../utils/arrays/services";
+import SectionHeader from "../../../comps/headers/SectionHeader";
 gsap.registerPlugin(ScrollTrigger);
 
 function ServiceOverviewSection() {
@@ -31,9 +32,7 @@ function ServiceOverviewSection() {
       id="service-overview-section"
       className="my-8 flex min-h-screen w-full shrink-0 flex-col items-center justify-center"
     >
-      <div>
-        <div>SERVICE OVERVIEW</div>
-      </div>
+      <SectionHeader title="SERVICE OVERVIEW" />
       <div
         id="service-overview-container"
         className="relative flex w-full max-w-2xl flex-col gap-4 px-4"
