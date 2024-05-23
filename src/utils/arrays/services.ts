@@ -3,7 +3,7 @@ const socialMediaMarketing = {
     serviceNumber: "01.",
     serviceTitle: "Social Media Management",
     serviceDescription: "We develop platform-specific strategies for your organic and paid social media campaigns that suit your niche and consistently grow your online presence.",
-    serviceImage: "/assets/services/social-media-management.png"
+    serviceImage: "/bold-spa/assets/services/social-media-management.png"
 }
 
 const contentBank = {
@@ -11,7 +11,7 @@ const contentBank = {
     serviceNumber: "02.",
     serviceTitle: "Content Bank",
     serviceDescription: "We curate a ready-to-use library with a consistent collection of qualitative photos, Reels and videos that perfectly synchronize with our proposed social media content strategy.",
-    serviceImage: "/assets/services/content-bank.png"
+    serviceImage: "/bold-spa/assets/services/content-bank.png"
 }
 
 const contentCreation = {
@@ -19,7 +19,7 @@ const contentCreation = {
     serviceNumber: "03.",
     serviceTitle: "Content Creation",
     serviceDescription: "We collaborate with professional photographers and videographers to ensure every visual asset produced is of the highest quality, captivating and aligned with your brand’s vision.",
-    serviceImage: "/assets/services/content-creation.png"
+    serviceImage: "/bold-spa/assets/services/content-creation.png"
 }
 
 const eventManagement = {
@@ -27,7 +27,7 @@ const eventManagement = {
     serviceNumber: "04.",
     serviceTitle: "Event Management",
     serviceDescription: "We adopt a bespoke and seamless approach to plan and execute events that are memorable and personalised to your brand’s unique concept.",
-    serviceImage: "/assets/services/event-management.png"
+    serviceImage: "/bold-spa/assets/services/event-management.png"
 }
 
 const influencerMarketing = {
@@ -35,7 +35,7 @@ const influencerMarketing = {
     serviceNumber: "05.",
     serviceTitle: "Influencer Marketing",
     serviceDescription: "We create and execute goal-centric influencer campaigns through a strategic selection of influencers dedicated to increase brand awareness, create authentic content and bring results.",
-    serviceImage: "/assets/services/influencer-marketing.png"
+    serviceImage: "/bold-spa/assets/services/influencer-marketing.png"
 }
 
 const services = [
