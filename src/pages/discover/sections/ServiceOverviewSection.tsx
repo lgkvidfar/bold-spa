@@ -12,16 +12,18 @@ function ServiceOverviewSection() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#service-overview-container",
-          start: "top 50%",
-          end: "bottom 20%",
+          start: "top center",
+          end: "bottom center",
           markers: false,
           scrub: 1,
         },
       });
 
-      tl.from("#service-line", {
-        scaleY: 0,
-      });
+      tl.fromTo(
+        "#service-line",
+        { height: 0 },
+        { height: "100%", ease: "none" },
+      );
     });
 
     return () => ctx.revert();
@@ -33,18 +35,20 @@ function ServiceOverviewSection() {
       className="my-8 flex min-h-screen w-full shrink-0 flex-col items-center justify-center"
     >
       <SectionHeader title="SERVICE OVERVIEW" />
-      <div
-        id="service-overview-container"
-        className="relative flex w-full max-w-2xl flex-col gap-4 px-4"
-      >
+      <div className="flex flex-col gap-8">
         <div
-          id="service-line"
-          className="absolute right-0 top-0 h-full w-2 origin-top rounded-sm bg-gradient-to-b from-light via-borange to-bpink"
-        />
+          id="service-overview-container"
+          className="relative flex w-full max-w-2xl flex-col gap-4 px-4"
+        >
+          <div
+            id="service-line"
+            className="absolute right-0 top-0 h-0 w-2 origin-top rounded-sm bg-gradient-to-b from-light via-borange to-bpink"
+          />
 
-        {services.map((service) => (
-          <ServiceCard key={service.serviceId} service={service} />
-        ))}
+          {services.map((service) => (
+            <ServiceCard key={service.serviceId} service={service} />
+          ))}
+        </div>
       </div>
     </section>
   );

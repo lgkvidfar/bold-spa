@@ -14,10 +14,12 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "feather-icons": "^4.29.2",
     "framer-motion": "^11.2.4",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
     "react-intersection-observer": "^9.10.2",
     "react-router-dom": "^6.23.1",
     "tailwind-merge": "^2.3.0"

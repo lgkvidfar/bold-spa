@@ -2,6 +2,8 @@ import { IService } from "../../../../utils/arrays/services";
 import gsap from "gsap";
 import { useLayoutEffect } from "react";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { CheckCircle, XCircle } from "react-feather"; // Importing Feather Icons
+
 gsap.registerPlugin(ScrollTrigger);
 
 function ServiceCard({ service }: { service: IService }) {
@@ -37,22 +39,37 @@ function ServiceCard({ service }: { service: IService }) {
   return (
     <div
       id={service.serviceId}
-      className="relative flex min-h-96 w-full flex-col gap-2 border-2 border-bpink p-4 backdrop-blur-sm"
+      className="relative flex h-[800px] min-h-96 w-full flex-col gap-2 border-2 border-bpink p-4 backdrop-blur-sm"
     >
-      <div className="flex gap-2 text-2xl">
+      <div className="flex flex-col gap-2 text-5xl sm:text-7xl">
         <span className="font-semibold text-bpink">
           {service.serviceNumber}
         </span>
-        <span>{service.serviceTitle}</span>
+        <span className="text-borange">{service.serviceTitle}</span>
       </div>
-      <p className="p-8 text-base font-light">{service.serviceDescription}</p>
-      <div className="absolute inset-0 z-[-1] overflow-hidden bg-dark opacity-40">
-        <img
-          className="h-full w-full object-cover"
-          id={`img-${service.serviceId}`}
-          src={service.serviceImage}
-          alt={service.serviceTitle}
-        />
+      <p className="my-4 pr-8 text-base font-light">
+        {service.serviceDescription}
+      </p>
+
+      <div className="grid w-full grid-cols-2 gap-4">
+        <div>
+          <div className="font-semibold text-green-600">Good Fits</div>
+          {service.goodFits.map((fit, idx) => (
+            <div key={idx} className="flex items-center gap-2 text-green-600">
+              <CheckCircle className="text-lg" />
+              <span>{fit}</span>
+            </div>
+          ))}
+        </div>
+        <div>
+          <div className="font-semibold text-red-600">Bad Fits</div>
+          {service.badFits.map((fit, idx) => (
+            <div key={idx} className="flex items-center gap-2 text-red-600">
+              <XCircle className="text-lg" />
+              <span>{fit}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
